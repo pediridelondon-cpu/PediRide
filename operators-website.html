@@ -3,538 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PediRide for Operators - Avoid Vehicle Seizure & Automate TfL Compliance</title>
+    <title>PediRide - Early Access Programme for Operators</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&family=Fraunces:wght@700;900&display=swap');
-        
-        body {
-            font-family: 'Work Sans', sans-serif;
-        }
-        
-        h1, h2, h3 {
-            font-family: 'Fraunces', serif;
-        }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #334155 100%);
-        }
-        
-        .threat-pulse {
-            animation: pulse 2s ease-in-out infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-        
-        .fade-in-up {
-            animation: fadeInUp 0.6s ease-out;
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .card-hover {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-        }
-        
-        .price-tag {
-            font-family: 'Fraunces', serif;
-            font-weight: 900;
-        }
-        
-        @media print {
-            .no-print { display: none; }
-        }
-    </style>
 </head>
 <body class="bg-slate-50">
-
-    <!-- Urgent Alert Banner -->
-    <div class="bg-blue-600 text-white py-3 no-print">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-center space-x-3 text-sm font-bold">
-                <i data-lucide="info" class="w-5 h-5"></i>
-                <span>NOW BUILDING</span>
-                <span class="hidden sm:inline">•</span>
-                <span class="hidden sm:inline">LAUNCHING Q3 2026 - AHEAD OF TFL ENFORCEMENT</span>
-            </div>
-        </div>
+    <div class="bg-blue-600 text-white py-3 text-center">
+        <p class="text-sm font-bold">🚧 NOW BUILDING WITH OPERATOR INPUT • LAUNCHING Q3 2026</p>
     </div>
-
-    <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-50 no-print">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-xl flex items-center justify-center">
-                        <i data-lucide="shield-check" class="w-7 h-7 text-white"></i>
-                    </div>
-                    <div>
-                        <div class="text-xl font-bold text-slate-900">PediRide</div>
-                        <div class="text-xs text-slate-600">Compliance Made Simple</div>
-                    </div>
+    
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-xl flex items-center justify-center">
+                    <i data-lucide="shield-check" class="w-7 h-7 text-white"></i>
                 </div>
-                <a href="#register" class="px-6 py-2 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-colors">
-                    Register Your Interest
-                </a>
+                <div>
+                    <div class="text-xl font-bold">PediRide</div>
+                    <div class="text-xs text-slate-600">Building With Operators</div>
+                </div>
             </div>
+            <a href="#register" class="px-6 py-2 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700">
+                Register Interest
+            </a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="gradient-bg text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl">
-                <div class="inline-block mb-6 px-4 py-2 bg-blue-500/20 border border-blue-400/50 rounded-full backdrop-blur">
-                    <span class="text-sm font-bold">LAUNCHING Q3 2026 • REGISTER INTEREST NOW</span>
-                </div>
-                <h1 class="text-5xl sm:text-6xl font-black mb-6 leading-tight">
-                    Don't Lose Your<br/>
-                    <span class="text-emerald-400">£5,000 Vehicle</span><br/>
-                    to Expired Paperwork
-                </h1>
-                <p class="text-2xl text-slate-300 mb-4 leading-relaxed font-medium">
-                    TfL's new Pedicabs Act 2024 requires DBS checks, insurance, and ride logs. 
-                </p>
-                <p class="text-xl text-emerald-400 mb-8 font-bold">
-                    We're building the platform to automate everything - launching before enforcement begins.
-                </p>
-                
-                <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6 mb-8">
-                    <div class="text-center mb-4">
-                        <div class="text-sm font-bold text-yellow-400 mb-2">🚧 CURRENTLY IN DEVELOPMENT</div>
-                        <div class="text-slate-300 text-sm">Launching Q3 2026 - Be one of the first operators with automated compliance</div>
+    <!-- Hero -->
+    <section class="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="mb-6">
+                <span class="px-4 py-2 bg-blue-500/20 border border-blue-400/50 rounded-full text-sm font-bold">
+                    LAUNCHING Q3 2026 • WE NEED YOUR INPUT
+                </span>
+            </div>
+            <h1 class="text-5xl sm:text-6xl font-black mb-6 leading-tight">
+                Don't Lose Your<br/>
+                <span class="text-emerald-400">£5,000 Vehicle</span><br/>
+                to Expired Paperwork
+            </h1>
+            <p class="text-2xl text-slate-300 mb-4">
+                TfL's new Pedicabs Act 2024 requires DBS checks, insurance, and ride logs.
+            </p>
+            <p class="text-xl text-emerald-400 mb-8 font-bold">
+                We're building automated compliance tools - WITH experienced operators, not in isolation.
+            </p>
+            
+            <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6 mb-8">
+                <p class="text-center text-sm font-bold text-yellow-400 mb-4">🤝 HELP US BUILD THIS RIGHT</p>
+                <div class="grid grid-cols-3 gap-6 text-center">
+                    <div>
+                        <div class="text-4xl font-black text-emerald-400">Zero</div>
+                        <div class="text-sm text-slate-300">Vehicle Seizure Risk</div>
                     </div>
-                    <div class="grid sm:grid-cols-3 gap-6 text-center border-t border-white/20 pt-6">
-                        <div>
-                            <div class="text-4xl font-black text-emerald-400 mb-1">£35/mo</div>
-                            <div class="text-sm text-slate-300">Per Pedicab (Estimated)</div>
-                        </div>
-                        <div>
-                            <div class="text-4xl font-black text-cyan-400 mb-1">10hrs</div>
-                            <div class="text-sm text-slate-300">Admin Time Saved Weekly</div>
-                        </div>
-                        <div>
-                            <div class="text-4xl font-black text-yellow-400 mb-1">£2,500</div>
-                            <div class="text-sm text-slate-300">TfL Fine Avoided</div>
-                        </div>
+                    <div>
+                        <div class="text-4xl font-black text-cyan-400">10hrs</div>
+                        <div class="text-sm text-slate-300">Admin Time Saved Weekly</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-black text-yellow-400">Auto</div>
+                        <div class="text-sm text-slate-300">TfL Reports Generated</div>
                     </div>
                 </div>
+            </div>
 
-                <div class="flex flex-wrap gap-4">
-                    <a href="#register" class="px-8 py-4 bg-emerald-500 text-slate-900 font-bold rounded-lg hover:bg-emerald-400 transition-colors text-lg shadow-xl">
-                        Register Your Interest
-                    </a>
-                    <a href="#how-it-works" class="px-8 py-4 bg-white/10 backdrop-blur text-white font-bold rounded-lg border-2 border-white/30 hover:bg-white/20 transition-colors text-lg">
-                        Learn More
-                    </a>
-                </div>
+            <div class="flex flex-wrap gap-4">
+                <a href="#register" class="px-8 py-4 bg-emerald-500 text-slate-900 font-bold rounded-lg hover:bg-emerald-400 text-lg">
+                    Register Your Interest
+                </a>
+                <a href="#how-it-works" class="px-8 py-4 bg-white/10 text-white font-bold rounded-lg border-2 border-white/30 hover:bg-white/20 text-lg">
+                    Learn More
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- HMRC Comparison Callout -->
+    <!-- HMRC Comparison -->
     <section class="py-12 bg-gradient-to-r from-blue-600 to-cyan-600">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white/10 backdrop-blur border-2 border-white/30 rounded-2xl p-8">
-                <div class="flex items-start space-x-4">
-                    <div class="flex-shrink-0">
-                        <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center">
-                            <i data-lucide="lightbulb" class="w-8 h-8 text-blue-600"></i>
-                        </div>
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="bg-white/10 backdrop-blur border-2 border-white/30 rounded-2xl p-8 flex items-start space-x-4">
+                <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="lightbulb" class="w-8 h-8 text-blue-600"></i>
+                </div>
+                <div class="text-white">
+                    <h3 class="text-2xl font-bold mb-3">Think of Us Like Xero for Pedicab Compliance</h3>
+                    <div class="space-y-2">
+                        <p><strong>HMRC requires</strong> you to file tax returns, but doesn't give you accounting software</p>
+                        <p><strong>DVLA requires</strong> you to have car insurance, but doesn't sell you insurance</p>
+                        <p><strong>TfL will require</strong> compliance, but won't give you the tools to manage it</p>
                     </div>
-                    <div class="text-white">
-                        <h3 class="text-2xl font-black mb-3">Think of Us Like Xero for Pedicab Compliance</h3>
-                        <div class="space-y-3 text-lg">
-                            <p class="flex items-start space-x-2">
-                                <i data-lucide="check" class="w-5 h-5 mt-1 flex-shrink-0"></i>
-                                <span><strong>HMRC requires</strong> you to file tax returns, but doesn't give you accounting software</span>
-                            </p>
-                            <p class="flex items-start space-x-2">
-                                <i data-lucide="check" class="w-5 h-5 mt-1 flex-shrink-0"></i>
-                                <span><strong>DVLA requires</strong> you to have car insurance, but doesn't sell you insurance</span>
-                            </p>
-                            <p class="flex items-start space-x-2">
-                                <i data-lucide="check" class="w-5 h-5 mt-1 flex-shrink-0"></i>
-                                <span><strong>TfL will require</strong> compliance, but won't give you the tools to manage it</span>
-                            </p>
-                        </div>
-                        <div class="mt-6 p-4 bg-emerald-500/20 border border-emerald-400/50 rounded-lg">
-                            <p class="font-bold text-emerald-300">
-                                That's what we're building - WITH operator input, not in isolation.
-                            </p>
-                        </div>
+                    <div class="mt-4 p-4 bg-emerald-500/20 border border-emerald-400/50 rounded-lg">
+                        <p class="font-bold text-emerald-300">
+                            That's what we're building - WITH operator input, not in isolation.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- The Threat Section -->
+    <!-- The Threat -->
     <section class="py-20 bg-red-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <div class="inline-block px-4 py-2 bg-red-200 text-red-900 rounded-full text-sm font-bold mb-4">
-                    WHY WE'RE BUILDING THIS
-                </div>
-                <h2 class="text-4xl sm:text-5xl font-black text-slate-900 mb-4">
-                    The Compliance Problem Operators Face
-                </h2>
-                <p class="text-xl text-slate-600 max-w-3xl mx-auto">
-                    Under the new Pedicabs (London) Act 2024, non-compliance has serious consequences
-                </p>
+                <span class="px-4 py-2 bg-red-200 text-red-900 rounded-full text-sm font-bold">WHY WE'RE BUILDING THIS</span>
+                <h2 class="text-4xl font-black text-slate-900 mt-4 mb-4">The Compliance Problem Operators Face</h2>
+                <p class="text-xl text-slate-600">Under the new Pedicabs (London) Act 2024, non-compliance has serious consequences</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-6 mb-12">
-                <div class="bg-white border-2 border-red-200 rounded-2xl p-8 text-center card-hover">
+                <div class="bg-white border-2 border-red-200 rounded-2xl p-8 text-center">
                     <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i data-lucide="x-circle" class="w-10 h-10 text-red-600"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Vehicle Seized</h3>
-                    <p class="text-slate-600 mb-4">
-                        TfL officers can impound your pedicab on the spot if your DBS, insurance, or licence is invalid
-                    </p>
+                    <h3 class="text-2xl font-bold mb-3">Vehicle Seized</h3>
+                    <p class="text-slate-600 mb-4">TfL officers can impound your pedicab if your DBS, insurance, or licence is invalid</p>
                     <div class="text-3xl font-black text-red-600">£5,000+</div>
                     <div class="text-sm text-slate-500">Vehicle value lost</div>
                 </div>
-
-                <div class="bg-white border-2 border-orange-200 rounded-2xl p-8 text-center card-hover">
+                <div class="bg-white border-2 border-orange-200 rounded-2xl p-8 text-center">
                     <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i data-lucide="ban" class="w-10 h-10 text-orange-600"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Driver Banned</h3>
-                    <p class="text-slate-600 mb-4">
-                        Drivers operating without valid licences face permanent bans from the industry
-                    </p>
+                    <h3 class="text-2xl font-bold mb-3">Driver Banned</h3>
+                    <p class="text-slate-600 mb-4">Drivers operating without valid licences face permanent industry bans</p>
                     <div class="text-3xl font-black text-orange-600">Lifetime</div>
                     <div class="text-sm text-slate-500">Industry ban</div>
                 </div>
-
-                <div class="bg-white border-2 border-amber-200 rounded-2xl p-8 text-center card-hover">
+                <div class="bg-white border-2 border-amber-200 rounded-2xl p-8 text-center">
                     <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i data-lucide="pound-sterling" class="w-10 h-10 text-amber-600"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Massive Fines</h3>
-                    <p class="text-slate-600 mb-4">
-                        £2,500 penalty per vehicle plus potential criminal record for serious violations
-                    </p>
+                    <h3 class="text-2xl font-bold mb-3">Massive Fines</h3>
+                    <p class="text-slate-600 mb-4">£2,500 penalty per vehicle plus potential criminal record</p>
                     <div class="text-3xl font-black text-amber-600">£2,500</div>
                     <div class="text-sm text-slate-500">Per violation</div>
                 </div>
             </div>
 
             <div class="bg-slate-900 text-white rounded-2xl p-8 text-center">
-                <p class="text-2xl font-bold mb-4">
-                    One missed DBS renewal = <span class="text-red-400">£7,500+ loss</span>
-                </p>
-                <p class="text-lg text-slate-300 mb-4">
-                    That's why we're building PediRide - to automate compliance tracking and protect your investment.
-                </p>
-                <p class="text-emerald-400 font-bold">
-                    Estimated cost: £420/year. That's 18 years of protection for the cost of one violation.
-                </p>
+                <p class="text-2xl font-bold mb-4">One missed DBS renewal = <span class="text-red-400">£7,500+ loss</span></p>
+                <p class="text-emerald-400 font-bold">Register interest to help us get the pricing right for your fleet economics.</p>
             </div>
         </div>
     </section>
 
     <!-- How It Works -->
     <section id="how-it-works" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <div class="inline-block px-4 py-2 bg-emerald-100 text-emerald-900 rounded-full text-sm font-bold mb-4">
-                    HOW IT WILL WORK
-                </div>
-                <h2 class="text-4xl sm:text-5xl font-black text-slate-900 mb-4">
-                    What We're Building
-                </h2>
-                <p class="text-xl text-slate-600 max-w-3xl mx-auto">
-                    Automated compliance tracking launching Q3 2026 - before TfL enforcement begins
-                </p>
+                <span class="px-4 py-2 bg-emerald-100 text-emerald-900 rounded-full text-sm font-bold">WHAT WE'RE BUILDING</span>
+                <h2 class="text-4xl font-black text-slate-900 mt-4 mb-4">Automated Compliance Tools</h2>
+                <p class="text-xl text-slate-600">Launching Q3 2026 - before TfL enforcement begins</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <div class="text-center">
-                    <div class="w-24 h-24 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-3xl flex items-center justify-center text-white text-4xl font-black mx-auto mb-6 shadow-xl">
-                        1
-                    </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Upload Your Documents</h3>
-                    <p class="text-slate-600">
-                        DBS certificates, insurance policies, vehicle inspections - upload once and we track everything
-                    </p>
+            <div class="grid md:grid-cols-3 gap-8 mb-16 text-center">
+                <div>
+                    <div class="w-24 h-24 bg-emerald-500 rounded-3xl flex items-center justify-center text-white text-4xl font-black mx-auto mb-6">1</div>
+                    <h3 class="text-2xl font-bold mb-4">Upload Your Documents</h3>
+                    <p class="text-slate-600">DBS certificates, insurance policies, vehicle inspections - upload once and we track everything</p>
                 </div>
-
-                <div class="text-center">
-                    <div class="w-24 h-24 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-3xl flex items-center justify-center text-white text-4xl font-black mx-auto mb-6 shadow-xl">
-                        2
-                    </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Get Automatic Alerts</h3>
-                    <p class="text-slate-600">
-                        21 days before anything expires, we email and text you. Never miss a renewal again
-                    </p>
+                <div>
+                    <div class="w-24 h-24 bg-cyan-500 rounded-3xl flex items-center justify-center text-white text-4xl font-black mx-auto mb-6">2</div>
+                    <h3 class="text-2xl font-bold mb-4">Get Automatic Alerts</h3>
+                    <p class="text-slate-600">21 days before anything expires, we email and text you. Never miss a renewal again</p>
                 </div>
-
-                <div class="text-center">
-                    <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center text-white text-4xl font-black mx-auto mb-6 shadow-xl">
-                        3
-                    </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Stay Compliant Forever</h3>
-                    <p class="text-slate-600">
-                        Dashboard shows your status (red/amber/green). One-click TfL reports. Zero stress
-                    </p>
+                <div>
+                    <div class="w-24 h-24 bg-blue-500 rounded-3xl flex items-center justify-center text-white text-4xl font-black mx-auto mb-6">3</div>
+                    <h3 class="text-2xl font-bold mb-4">Stay Compliant Forever</h3>
+                    <p class="text-slate-600">Dashboard shows your status (red/amber/green). One-click TfL reports. Zero stress</p>
                 </div>
             </div>
 
-            <div class="bg-gradient-to-br from-slate-50 to-blue-50 border-2 border-blue-200 rounded-2xl p-10">
-                <h3 class="text-3xl font-bold text-slate-900 mb-4">What You'll Get When We Launch:</h3>
+            <div class="bg-slate-50 border-2 border-blue-200 rounded-2xl p-10 max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold mb-4">What You'll Get When We Launch:</h3>
                 <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
-                    <p class="text-sm text-yellow-900">
-                        <strong>Note:</strong> Currently in development. Launching Q3 2026. Register interest to be notified when ready.
-                    </p>
+                    <p class="text-sm text-yellow-900"><strong>Note:</strong> Currently in development. Launching Q3 2026.</p>
                 </div>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="check-circle" class="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <div class="font-bold text-slate-900 mb-1">DBS Expiry Tracking</div>
-                            <div class="text-sm text-slate-600">Automatic alerts 21 days before expiry</div>
-                        </div>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="flex items-start space-x-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1"></i>
+                        <div><strong>DBS Expiry Tracking:</strong> Automatic alerts 21 days before expiry</div>
                     </div>
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="check-circle" class="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <div class="font-bold text-slate-900 mb-1">Insurance Monitoring</div>
-                            <div class="text-sm text-slate-600">Never operate uninsured again</div>
-                        </div>
+                    <div class="flex items-start space-x-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1"></i>
+                        <div><strong>Insurance Monitoring:</strong> Never operate uninsured again</div>
                     </div>
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="check-circle" class="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <div class="font-bold text-slate-900 mb-1">Digital Payment System</div>
-                            <div class="text-sm text-slate-600">QR code payments - stop driver theft</div>
-                        </div>
+                    <div class="flex items-start space-x-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1"></i>
+                        <div><strong>Digital Payment System:</strong> QR code payments - stop driver theft</div>
                     </div>
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="check-circle" class="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <div class="font-bold text-slate-900 mb-1">Automatic Ride Logs</div>
-                            <div class="text-sm text-slate-600">TfL reports generated automatically</div>
-                        </div>
+                    <div class="flex items-start space-x-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1"></i>
+                        <div><strong>Automatic Ride Logs:</strong> TfL reports generated automatically</div>
                     </div>
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="check-circle" class="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <div class="font-bold text-slate-900 mb-1">Fleet Dashboard</div>
-                            <div class="text-sm text-slate-600">Manage all vehicles from one screen</div>
-                        </div>
+                    <div class="flex items-start space-x-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1"></i>
+                        <div><strong>Fleet Dashboard:</strong> Manage all vehicles from one screen</div>
                     </div>
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="check-circle" class="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <div class="font-bold text-slate-900 mb-1">QR Trust Plaque</div>
-                            <div class="text-sm text-slate-600">Passengers scan to verify you're safe</div>
-                        </div>
+                    <div class="flex items-start space-x-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1"></i>
+                        <div><strong>QR Trust Plaque:</strong> Passengers scan to verify you're safe</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-20 bg-gradient-to-br from-emerald-50 to-cyan-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <div class="inline-block px-4 py-2 bg-emerald-200 text-emerald-900 rounded-full text-sm font-bold mb-4">
-                    ESTIMATED PRICING
-                </div>
-                <h2 class="text-4xl sm:text-5xl font-black text-slate-900 mb-4">
-                    What It Will Cost
-                </h2>
-                <p class="text-xl text-slate-600 max-w-3xl mx-auto">
-                    Transparent pricing based on per-pedicab model. Final pricing confirmed at launch (Q3 2026).
-                </p>
-            </div>
-
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-white border-4 border-emerald-500 rounded-3xl overflow-hidden shadow-2xl">
-                    <div class="bg-gradient-to-r from-emerald-500 to-cyan-500 text-white p-8 text-center">
-                        <div class="text-sm font-bold bg-yellow-400 text-slate-900 inline-block px-3 py-1 rounded-full mb-3">
-                            LAUNCHING Q3 2026
-                        </div>
-                        <h3 class="text-3xl font-black mb-2">PediRide Compliance</h3>
-                        <p class="text-emerald-100">Everything you need to stay legal</p>
-                    </div>
-                    <div class="p-10">
-                        <div class="text-center mb-8">
-                            <div class="price-tag text-7xl text-slate-900 mb-2">£35</div>
-                            <div class="text-2xl text-slate-600 font-semibold">per pedicab / month</div>
-                            <div class="text-slate-500 mt-2">Billed monthly • Cancel anytime</div>
-                        </div>
-
-                        <div class="bg-slate-50 rounded-2xl p-6 mb-8">
-                            <div class="font-bold text-slate-900 mb-4 text-lg">Plus Transaction Fees:</div>
-                            <div class="text-slate-700">
-                                <strong>8% commission</strong> on digital payments (only when you use our QR payment system)
-                            </div>
-                            <div class="text-sm text-slate-500 mt-2">
-                                Still cheaper than losing 20-30% to driver theft on cash payments
-                            </div>
-                        </div>
-
-                        <div class="space-y-3 mb-8">
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="check" class="w-5 h-5 text-emerald-600"></i>
-                                <span class="text-slate-700">DBS & insurance expiry tracking</span>
-                            </div>
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="check" class="w-5 h-5 text-emerald-600"></i>
-                                <span class="text-slate-700">Automatic email & SMS alerts</span>
-                            </div>
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="check" class="w-5 h-5 text-emerald-600"></i>
-                                <span class="text-slate-700">One-click TfL reports</span>
-                            </div>
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="check" class="w-5 h-5 text-emerald-600"></i>
-                                <span class="text-slate-700">Digital payment QR system</span>
-                            </div>
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="check" class="w-5 h-5 text-emerald-600"></i>
-                                <span class="text-slate-700">Fleet management dashboard</span>
-                            </div>
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="check" class="w-5 h-5 text-emerald-600"></i>
-                                <span class="text-slate-700">QR Trust Plaque (physical)</span>
-                            </div>
-                        </div>
-
-                        <a href="#register" class="block w-full py-4 bg-emerald-600 text-white text-center font-bold rounded-xl hover:bg-emerald-700 transition-colors text-lg shadow-lg">
-                            Register Interest for Early Access
-                        </a>
-                        
-                        <p class="text-sm text-slate-500 text-center mt-4">
-                            Registering now gets you notified when we launch + early bird pricing
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Price Examples -->
-                <div class="mt-12">
-                    <div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-6 mb-6 text-center">
-                        <p class="text-slate-700 font-semibold mb-2">
-                            🚧 Platform Currently in Development
-                        </p>
-                        <p class="text-sm text-slate-600">
-                            Pricing shown is estimated. Final pricing will be confirmed at launch (Q3 2026). 
-                            Early registrants receive priority pricing lock-in.
-                        </p>
-                    </div>
-                    
-                    <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-white rounded-xl p-6 text-center border-2 border-slate-200">
-                        <div class="text-slate-600 font-semibold mb-2">Small Operator</div>
-                        <div class="text-3xl font-black text-slate-900 mb-1">£105/mo</div>
-                        <div class="text-slate-500 text-sm">3 pedicabs</div>
-                    </div>
-                    <div class="bg-white rounded-xl p-6 text-center border-2 border-emerald-200">
-                        <div class="text-emerald-600 font-semibold mb-2">Medium Fleet</div>
-                        <div class="text-3xl font-black text-slate-900 mb-1">£350/mo</div>
-                        <div class="text-slate-500 text-sm">10 pedicabs</div>
-                    </div>
-                    <div class="bg-white rounded-xl p-6 text-center border-2 border-slate-200">
-                        <div class="text-slate-600 font-semibold mb-2">Large Fleet</div>
-                        <div class="text-3xl font-black text-slate-900 mb-1">£1,050/mo</div>
-                        <div class="text-slate-500 text-sm">30 pedicabs</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ROI Calculator -->
-    <section class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Early Access (No Pricing) -->
+    <section class="py-20 bg-gradient-to-br from-emerald-50 to-cyan-50">
+        <div class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-4xl sm:text-5xl font-black text-slate-900 mb-4">
-                    Calculate Your Potential Savings
-                </h2>
-                <p class="text-xl text-slate-600">
-                    Estimate how much PediRide could save you per year
-                </p>
+                <span class="px-4 py-2 bg-emerald-200 text-emerald-900 rounded-full text-sm font-bold">EARLY ACCESS PROGRAMME</span>
+                <h2 class="text-4xl font-black text-slate-900 mt-4 mb-4">We're Not Pricing This Yet</h2>
+                <p class="text-xl text-slate-600">We want YOUR input on what fair pricing looks like for your fleet economics</p>
             </div>
 
-            <div class="bg-gradient-to-br from-slate-900 to-blue-900 text-white rounded-3xl p-10 shadow-2xl">
-                <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white border-4 border-emerald-500 rounded-3xl overflow-hidden">
+                <div class="bg-gradient-to-r from-emerald-500 to-cyan-500 text-white p-8 text-center">
+                    <span class="px-3 py-1 bg-yellow-400 text-slate-900 rounded-full text-sm font-bold">HELP US GET THIS RIGHT</span>
+                    <h3 class="text-3xl font-black mt-3 mb-2">Co-Design Pricing With Us</h3>
+                    <p>Your fleet economics should determine what's fair</p>
+                </div>
+                <div class="p-10">
+                    <div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-6 mb-8">
+                        <h4 class="font-bold text-lg mb-3">Our Pricing Philosophy:</h4>
+                        <ul class="space-y-2 text-slate-700">
+                            <li>✓ <strong>Cheaper than one violation:</strong> Should cost less than a single £2,500 fine + vehicle seizure</li>
+                            <li>✓ <strong>Saves you money overall:</strong> Admin time saved + theft prevented should exceed the cost</li>
+                            <li>✓ <strong>Fair for all fleet sizes:</strong> Whether you have 2 pedicabs or 50</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-50 rounded-xl p-6 mb-8">
+                        <h4 class="font-bold text-lg mb-4">What Early Registrants Get:</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start space-x-2">
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1"></i>
+                                <div><strong>Input on Pricing:</strong> Help us understand what's fair for your fleet</div>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1"></i>
+                                <div><strong>Priority Pricing Lock-In:</strong> Better pricing than general market rates</div>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1"></i>
+                                <div><strong>First Access:</strong> Be ready before TfL enforcement begins</div>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1"></i>
+                                <div><strong>Shape Features:</strong> Tell us what compliance features you need</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#register" class="block w-full py-4 bg-emerald-600 text-white text-center font-bold rounded-xl hover:bg-emerald-700 text-lg">
+                        Register Interest & Help Shape This
+                    </a>
+                    <p class="text-sm text-slate-500 text-center mt-4">Zero commitment - we just want to understand your fleet economics</p>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-white rounded-2xl p-8 border-2 border-slate-200">
+                <h3 class="text-2xl font-bold text-center mb-6">Why Operators Will Pay for This:</h3>
+                <div class="grid md:grid-cols-3 gap-6 text-center">
                     <div>
-                        <label class="block text-sm font-semibold mb-2">Number of Pedicabs:</label>
-                        <input type="number" id="fleet-size" value="10" min="1" max="100" 
-                               class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white text-2xl font-bold"
-                               onchange="calculateROI()">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i data-lucide="shield-alert" class="w-8 h-8 text-red-600"></i>
+                        </div>
+                        <div class="font-bold mb-2">Avoid Vehicle Seizure</div>
+                        <div class="text-sm text-slate-600">One missed DBS = £7,500 loss</div>
                     </div>
                     <div>
-                        <label class="block text-sm font-semibold mb-2">Revenue per Pedicab/Year:</label>
-                        <input type="number" id="revenue-per-vehicle" value="25000" step="1000"
-                               class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white text-2xl font-bold"
-                               onchange="calculateROI()">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i data-lucide="clock" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <div class="font-bold mb-2">Save Admin Time</div>
+                        <div class="text-sm text-slate-600">10+ hours/week saved on tracking</div>
+                    </div>
+                    <div>
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i data-lucide="trending-down" class="w-8 h-8 text-green-600"></i>
+                        </div>
+                        <div class="font-bold mb-2">Stop Driver Theft</div>
+                        <div class="text-sm text-slate-600">Reduce cash theft from 20% to 5%</div>
                     </div>
                 </div>
-
-                <div class="border-t border-white/20 pt-8">
-                    <h3 class="text-2xl font-bold mb-4">Your Estimated Annual Savings:</h3>
-                    <div class="bg-yellow-50/10 border border-yellow-400/30 rounded-lg p-3 mb-6">
-                        <p class="text-sm text-yellow-300">
-                            These are projections based on typical operator costs. Actual savings will vary.
-                        </p>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center">
-                            <span class="text-slate-300">Avoid vehicle seizure risk</span>
-                            <span id="seizure-saving" class="text-2xl font-bold text-emerald-400">£50,000</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-slate-300">Reduce driver theft (20% → 5%)</span>
-                            <span id="theft-saving" class="text-2xl font-bold text-cyan-400">£37,500</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-slate-300">Save admin time (10hrs/week)</span>
-                            <span id="time-saving" class="text-2xl font-bold text-yellow-400">£5,950</span>
-                        </div>
-                        <div class="border-t border-white/20 pt-4 mt-4">
-                            <div class="flex justify-between items-center">
-                                <span class="text-xl font-bold">Total Value</span>
-                                <span id="total-value" class="text-4xl font-black text-white">£93,450</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-xl font-bold">PediRide Cost</span>
-                            <span id="total-cost" class="text-4xl font-black text-red-400">-£24,200</span>
-                        </div>
-                        <div class="bg-emerald-500/20 border border-emerald-400/50 rounded-xl p-6 mt-6">
-                            <div class="flex justify-between items-center">
-                                <span class="text-2xl font-bold">Net Savings</span>
-                                <span id="net-saving" class="text-5xl font-black text-emerald-400">£69,250</span>
-                            </div>
-                            <div class="text-center mt-4">
-                                <span id="roi-multiple" class="text-xl text-emerald-300">3.9x return on investment</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="mt-8 text-center p-4 bg-emerald-50 rounded-lg">
+                    <p><strong>Bottom line:</strong> Whatever we charge needs to save you MORE than it costs. Help us get that equation right.</p>
                 </div>
             </div>
         </div>
@@ -542,17 +298,13 @@
 
     <!-- Register Interest -->
     <section id="register" class="py-20 bg-gradient-to-br from-blue-900 via-purple-900 to-slate-900 text-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-12">
-                <div class="inline-block px-4 py-2 bg-yellow-500/20 border border-yellow-400/50 rounded-full text-sm font-bold mb-4">
-                    HELP US BUILD THIS WITH YOU
-                </div>
-                <h2 class="text-4xl sm:text-5xl font-black mb-4">
-                    We Need Operator Input
-                </h2>
+                <span class="px-4 py-2 bg-yellow-500/20 border border-yellow-400/50 rounded-full text-sm font-bold">HELP US BUILD THIS WITH YOU</span>
+                <h2 class="text-4xl font-black mt-4 mb-4">We Need Operator Input</h2>
                 <p class="text-xl text-slate-300 mb-4">
                     We're not building PediRide in isolation. We need YOUR expertise to ensure this platform solves 
-                    the real compliance challenges operators face - not theoretical ones.
+                    real compliance challenges - not theoretical ones.
                 </p>
                 <p class="text-lg text-emerald-400 font-semibold">
                     Register interest now to help shape the platform before launch (Q3 2026)
@@ -562,59 +314,47 @@
             <div class="bg-white/10 backdrop-blur border border-white/20 rounded-3xl p-10">
                 <h3 class="text-2xl font-bold mb-6">Why We Need Your Input:</h3>
                 <div class="grid md:grid-cols-2 gap-4 mb-8">
-                    <div class="flex items-start space-x-3">
+                    <div class="flex items-start space-x-2">
                         <i data-lucide="users" class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-1"></i>
                         <span>You know the daily compliance challenges better than anyone</span>
                     </div>
-                    <div class="flex items-start space-x-3">
+                    <div class="flex items-start space-x-2">
                         <i data-lucide="message-square" class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-1"></i>
-                        <span>Direct feedback during development ensures it works for YOUR fleet</span>
+                        <span>Direct feedback ensures it works for YOUR fleet</span>
                     </div>
-                    <div class="flex items-start space-x-3">
+                    <div class="flex items-start space-x-2">
                         <i data-lucide="bell" class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-1"></i>
-                        <span>Get notified the moment we launch - be first in line</span>
+                        <span>Get notified the moment we launch</span>
                     </div>
-                    <div class="flex items-start space-x-3">
+                    <div class="flex items-start space-x-2">
                         <i data-lucide="percent" class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-1"></i>
-                        <span>Early bird pricing (first 50 operators who register)</span>
+                        <span>Priority pricing (better than market rates)</span>
                     </div>
                 </div>
 
-                <form class="space-y-4" onsubmit="handleInterestRegistration(event)">
+                <form class="space-y-4" onsubmit="handleRegistration(event)">
                     <div class="grid md:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-sm font-semibold mb-2">Your Name *</label>
-                            <input type="text" required
-                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-slate-400"
-                                   placeholder="John Smith">
+                            <input type="text" required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white" placeholder="John Smith">
                         </div>
                         <div>
                             <label class="block text-sm font-semibold mb-2">Company Name</label>
-                            <input type="text"
-                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-slate-400"
-                                   placeholder="Smith Pedicabs Ltd">
+                            <input type="text" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white" placeholder="Smith Pedicabs Ltd">
                         </div>
                     </div>
-
                     <div>
                         <label class="block text-sm font-semibold mb-2">Email Address *</label>
-                        <input type="email" required
-                               class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-slate-400"
-                               placeholder="john@smithpedicabs.co.uk">
+                        <input type="email" required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white" placeholder="john@smithpedicabs.co.uk">
                     </div>
-
                     <div>
                         <label class="block text-sm font-semibold mb-2">Phone Number *</label>
-                        <input type="tel" required
-                               class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-slate-400"
-                               placeholder="07xxx xxxxxx">
+                        <input type="tel" required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white" placeholder="07xxx xxxxxx">
                     </div>
-
                     <div class="grid md:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-sm font-semibold mb-2">Number of Pedicabs *</label>
-                            <select required
-                                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white">
+                            <select required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white">
                                 <option value="">Select...</option>
                                 <option value="1-5">1-5 pedicabs</option>
                                 <option value="6-10">6-10 pedicabs</option>
@@ -633,22 +373,14 @@
                             </select>
                         </div>
                     </div>
-
                     <div>
                         <label class="block text-sm font-semibold mb-2">Questions or Comments</label>
-                        <textarea rows="3"
-                                  class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-slate-400"
-                                  placeholder="Any questions about compliance? Concerns about TfL enforcement? Let us know..."></textarea>
+                        <textarea rows="3" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white" placeholder="What compliance challenges do you face? What would make this valuable for your fleet?"></textarea>
                     </div>
-
-                    <button type="submit"
-                            class="w-full py-4 bg-emerald-500 text-slate-900 font-bold rounded-xl hover:bg-emerald-400 transition-colors text-lg shadow-xl">
+                    <button type="submit" class="w-full py-4 bg-emerald-500 text-slate-900 font-bold rounded-xl hover:bg-emerald-400 text-lg">
                         Register My Interest
                     </button>
-
-                    <p class="text-sm text-slate-300 text-center">
-                        No commitment required. We'll contact you with launch updates and answer any questions.
-                    </p>
+                    <p class="text-sm text-slate-300 text-center">No commitment required. We'll contact you with launch updates.</p>
                 </form>
             </div>
         </div>
@@ -656,81 +388,35 @@
 
     <!-- FAQ -->
     <section class="py-20 bg-slate-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-black text-slate-900 mb-4">
-                    Common Questions
-                </h2>
-            </div>
-
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-black text-center mb-12">Common Questions</h2>
+            
             <div class="space-y-6">
                 <div class="bg-white border-2 border-blue-200 rounded-xl p-6">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">When will PediRide be ready?</h3>
-                    <p class="text-slate-600 mb-3">
-                        <strong>We're currently building the platform.</strong> Development started in Q1 2026 with a planned launch in Q3 2026 
-                        - strategically timed to be ready BEFORE TfL enforcement begins.
-                    </p>
-                    <p class="text-slate-600">
-                        Register your interest now to get notified the moment we launch, secure early bird pricing, and be ready when enforcement starts.
-                    </p>
+                    <h3 class="text-xl font-bold mb-2">When will PediRide be ready?</h3>
+                    <p class="text-slate-600"><strong>We're currently building the platform.</strong> Development started Q1 2026 with a planned launch in Q3 2026 - before TfL enforcement begins. Register to get notified when we launch.</p>
                 </div>
 
                 <div class="bg-white border-2 border-blue-200 rounded-xl p-6">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Why should I register interest now?</h3>
-                    <p class="text-slate-600">
-                        Early registrants get priority access when we launch, discounted pricing for the first 6 months, and input on 
-                        features during development. Plus, you'll be ready BEFORE TfL enforcement begins (no last-minute panic).
-                    </p>
+                    <h3 class="text-xl font-bold mb-2">Why should I register interest now?</h3>
+                    <p class="text-slate-600">Early registrants get priority pricing lock-in, input on features during development, and first access when we launch. Plus you'll be ready BEFORE TfL enforcement begins (no last-minute panic).</p>
                 </div>
 
                 <div class="bg-white border-2 border-slate-200 rounded-xl p-6">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Why should I pay you instead of just submitting to TfL?</h3>
-                    <p class="text-slate-600 mb-3">
-                        <strong>Think of it like tax filing.</strong> HMRC requires you to submit tax returns, but they don't give you 
-                        QuickBooks or Xero - you buy accounting software to make compliance manageable.
-                    </p>
-                    <p class="text-slate-600 mb-3">
-                        TfL will require DBS checks, insurance, and ride logs, but they won't give you a dashboard that tracks when 
-                        things expire or automatically generates reports. That's what we're building - the compliance tools TfL 
-                        doesn't provide.
-                    </p>
-                    <p class="text-slate-600">
-                        <strong>And we need YOUR help.</strong> You know the day-to-day compliance challenges better than anyone. 
-                        That's why we're asking operators to register interest now - so we can build this WITH you, not just FOR you.
-                    </p>
+                    <h3 class="text-xl font-bold mb-2">Why should I pay you instead of just submitting to TfL?</h3>
+                    <p class="text-slate-600 mb-3"><strong>Think of it like tax filing.</strong> HMRC requires tax returns but doesn't give you QuickBooks - you buy accounting software to make compliance manageable.</p>
+                    <p class="text-slate-600 mb-3">TfL will require DBS checks, insurance, and ride logs, but they won't give you a dashboard that tracks when things expire or auto-generates reports.</p>
+                    <p class="text-slate-600"><strong>And we need YOUR help.</strong> You know the challenges better than anyone. That's why we're asking operators to register now - so we can build this WITH you, not just FOR you.</p>
                 </div>
 
                 <div class="bg-white border-2 border-slate-200 rounded-xl p-6">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">When does TfL enforcement start?</h3>
-                    <p class="text-slate-600">
-                        Q3-Q4 2026 (6-9 months). The Pedicabs (London) Act 2024 gives TfL power to seize non-compliant 
-                        vehicles. Don't wait until enforcement begins - get compliant NOW.
-                    </p>
+                    <h3 class="text-xl font-bold mb-2">When does TfL enforcement start?</h3>
+                    <p class="text-slate-600">Q3-Q4 2026 (6-9 months). Don't wait until enforcement begins - register interest NOW to be ready when it happens.</p>
                 </div>
 
                 <div class="bg-white border-2 border-slate-200 rounded-xl p-6">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">What if I only have 2-3 pedicabs?</h3>
-                    <p class="text-slate-600">
-                        Perfect! Small operators benefit most because you can't afford to lose even ONE vehicle. At £35/pedicab/month, 
-                        you're protecting £10,000+ in assets for less than £2/day total.
-                    </p>
-                </div>
-
-                <div class="bg-white border-2 border-slate-200 rounded-xl p-6">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Can I cancel anytime?</h3>
-                    <p class="text-slate-600">
-                        Yes. Month-to-month contract with no long-term commitment. But remember: if you cancel and miss a 
-                        DBS renewal, TfL can seize your vehicle. We're insurance against that risk.
-                    </p>
-                </div>
-
-                <div class="bg-white border-2 border-slate-200 rounded-xl p-6">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Does registering interest commit me to anything?</h3>
-                    <p class="text-slate-600">
-                        No. Registering interest is completely free with zero obligation. We'll simply keep you updated on launch 
-                        progress, answer your questions, and offer early bird pricing when we're ready. You decide whether to sign 
-                        up when we launch in Q3 2026.
-                    </p>
+                    <h3 class="text-xl font-bold mb-2">Does registering interest commit me to anything?</h3>
+                    <p class="text-slate-600">No. Completely free with zero obligation. We'll simply keep you updated on launch progress, answer your questions, and offer early bird pricing when we're ready. You decide whether to sign up when we launch in Q3 2026.</p>
                 </div>
             </div>
         </div>
@@ -738,63 +424,31 @@
 
     <!-- Footer -->
     <footer class="bg-slate-900 text-slate-400 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <div class="text-white font-bold text-2xl mb-2">PediRide</div>
-                <div class="text-sm mb-2 text-emerald-400 font-semibold">Currently in Development • Launching Q3 2026</div>
-                <div class="text-sm mb-4">Automated Compliance for London's Pedicab Operators</div>
-                <a href="/cdn-cgi/l/email-protection#85f5e0e1ecf7ece1e0e9eaebe1eaebc5e2e8e4ece9abe6eae8" class="text-emerald-400 hover:text-emerald-300">
-                    <span class="__cf_email__" data-cfemail="b1c1d4d5d8c3d8d5d4dddedfd5dedff1d6dcd0d8dd9fd2dedc">[email&#160;protected]</span>
-                </a>
-                <div class="text-xs mt-6 text-slate-500">
-                    © 2026 PediRide Limited • Register Interest for Launch Updates
-                </div>
-            </div>
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="text-white font-bold text-2xl mb-2">PediRide</div>
+            <div class="text-sm mb-2 text-emerald-400 font-semibold">Currently in Development • Launching Q3 2026</div>
+            <div class="text-sm mb-4">Automated Compliance for London's Pedicab Operators</div>
+            <a href="mailto:pediridelondon@gmail.com" class="text-emerald-400 hover:text-emerald-300">
+                pediridelondon@gmail.com
+            </a>
+            <div class="text-xs mt-6 text-slate-500">© 2026 PediRide Limited • Register Interest for Launch Updates</div>
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         lucide.createIcons();
-
-        function calculateROI() {
-            const fleetSize = parseInt(document.getElementById('fleet-size').value) || 10;
-            const revenuePerVehicle = parseInt(document.getElementById('revenue-per-vehicle').value) || 25000;
-
-            // Calculations
-            const seizureSaving = fleetSize * 5000; // £5,000 per vehicle risk
-            const theftSaving = fleetSize * (revenuePerVehicle * 0.15); // Save 15% by reducing theft from 20% to 5%
-            const timeSaving = 5950; // £5,950/year fixed (10hrs/week at min wage)
-            const totalValue = seizureSaving + theftSaving + timeSaving;
-
-            // Costs
-            const saasCost = fleetSize * 420; // £35/mo × 12
-            const transactionCost = fleetSize * (revenuePerVehicle * 0.4 * 0.08); // 40% digital adoption, 8% fee
-            const totalCost = saasCost + transactionCost;
-
-            const netSaving = totalValue - totalCost;
-            const roiMultiple = (totalValue / totalCost).toFixed(1);
-
-            // Update display
-            document.getElementById('seizure-saving').textContent = `£${seizureSaving.toLocaleString()}`;
-            document.getElementById('theft-saving').textContent = `£${Math.round(theftSaving).toLocaleString()}`;
-            document.getElementById('time-saving').textContent = `£${timeSaving.toLocaleString()}`;
-            document.getElementById('total-value').textContent = `£${Math.round(totalValue).toLocaleString()}`;
-            document.getElementById('total-cost').textContent = `-£${Math.round(totalCost).toLocaleString()}`;
-            document.getElementById('net-saving').textContent = `£${Math.round(netSaving).toLocaleString()}`;
-            document.getElementById('roi-multiple').textContent = `${roiMultiple}x return on investment`;
-        }
-
-        function handleInterestRegistration(e) {
+        
+        function handleRegistration(e) {
             e.preventDefault();
-            alert('Thank you for registering your interest!\n\nWe\'ll contact you within 24 hours with:\n• Launch timeline updates\n• Early bird pricing details\n• Answers to your questions\n\nCheck your email for confirmation.');
-            // In production, this would POST to your backend
+            alert('Thank you for registering your interest!\n\nWe\'ll contact you within 24 hours with:\n• Launch timeline updates\n• Pricing discussions\n• Feature input opportunities\n\nCheck your email for confirmation.');
         }
-
-        // Initialize calculator
-        calculateROI();
-
-        // Smooth scroll
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                co
+                document.querySelector(this.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
