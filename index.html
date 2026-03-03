@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PediRide - Business Plan & Platform Mapper</title>
+    <title>PediRide - Business Plan Interactive Mapper</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -79,11 +79,11 @@
                     </div>
                     <div>
                         <h1 class="text-2xl font-bold gradient-text">PediRide</h1>
-                        <p class="text-xs text-gray-500">Compliance Platform for London Pedicabs</p>
+                        <p class="text-xs text-gray-500">Compliance Operating System</p>
                     </div>
                 </div>
                 <div class="flex items-center space-x-3">
-                    <button onclick="exportData()" class="flex items-center space-x-2 px-4 py-2 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-colors shadow-md">
+                    <button onclick="window.print()" class="flex items-center space-x-2 px-4 py-2 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-colors shadow-md">
                         <i data-lucide="download" class="w-4 h-4"></i>
                         <span class="hidden sm:inline">Export PDF</span>
                     </button>
@@ -95,7 +95,7 @@
         </div>
     </header>
 
-    <!-- Navigation Tabs -->
+    <!-- Navigation -->
     <nav id="mainNav" class="bg-white shadow-md no-print">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:space-x-2 py-4 space-y-2 md:space-y-0">
@@ -105,7 +105,7 @@
                 </button>
                 <button onclick="showView('business')" class="tab-button tab-inactive flex items-center space-x-2 px-4 py-3 rounded-lg font-semibold transition-all">
                     <i data-lucide="pound-sterling" class="w-5 h-5"></i>
-                    <span>Business Model</span>
+                    <span>Tri-Hybrid Model</span>
                 </button>
                 <button onclick="showView('roadmap')" class="tab-button tab-inactive flex items-center space-x-2 px-4 py-3 rounded-lg font-semibold transition-all">
                     <i data-lucide="calendar-days" class="w-5 h-5"></i>
@@ -131,67 +131,70 @@
             <div class="text-center mb-12 space-y-4">
                 <h1 class="text-5xl sm:text-6xl font-bold gradient-text mb-4">PediRide</h1>
                 <p class="text-2xl sm:text-3xl text-gray-700 max-w-4xl mx-auto">
-                    Compliance & Payment Platform for London's Pedicab Industry
+                    The Compliance Operating System for London's Pedicab Industry
                 </p>
                 <div class="flex flex-wrap justify-center gap-3 mt-6">
                     <span class="px-5 py-2 bg-emerald-100 text-emerald-800 rounded-full font-semibold text-sm">
                         SEIS-Eligible: £95,000
                     </span>
                     <span class="px-5 py-2 bg-blue-100 text-blue-800 rounded-full font-semibold text-sm">
-                        Launch: Q2 2026
+                        Break-Even: Month 9 (48 vehicles)
                     </span>
                     <span class="px-5 py-2 bg-purple-100 text-purple-800 rounded-full font-semibold text-sm">
+                        Launch: Q3 2026
+                    </span>
+                    <span class="px-5 py-2 bg-red-100 text-red-800 rounded-full font-semibold text-sm">
                         TfL Enforcement: Q3-Q4 2026
                     </span>
                 </div>
             </div>
 
             <div class="grid md:grid-cols-2 gap-6 mb-12">
-                <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-8 rounded-2xl border-2 border-emerald-200 card-hover">
+                <div class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl border-2 border-red-200 card-hover">
                     <div class="flex items-center space-x-3 mb-4">
-                        <i data-lucide="alert-triangle" class="w-8 h-8 text-emerald-700"></i>
-                        <h3 class="text-2xl font-bold text-emerald-900">The Problem</h3>
+                        <i data-lucide="alert-triangle" class="w-8 h-8 text-red-700"></i>
+                        <h3 class="text-2xl font-bold text-red-900">The Crisis</h3>
                     </div>
-                    <ul class="space-y-3 text-emerald-800">
+                    <ul class="space-y-3 text-red-800">
                         <li class="flex items-start space-x-2">
-                            <i data-lucide="chevron-right" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
-                            <span>Widespread passenger overcharging & safety concerns</span>
+                            <i data-lucide="x-circle" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                            <span><strong>85%</strong> of passengers report overcharging (TfL data)</span>
                         </li>
                         <li class="flex items-start space-x-2">
-                            <i data-lucide="chevron-right" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
-                            <span>No regulatory framework or licensing system</span>
+                            <i data-lucide="x-circle" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                            <span><strong>75%</strong> feel unsafe using pedicabs</span>
                         </li>
                         <li class="flex items-start space-x-2">
-                            <i data-lucide="chevron-right" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
-                            <span>TfL enforcement expected within 6-9 months</span>
+                            <i data-lucide="x-circle" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                            <span><strong>£12M</strong> trapped in 100% cash economy</span>
                         </li>
                         <li class="flex items-start space-x-2">
-                            <i data-lucide="chevron-right" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
-                            <span>450 operators need compliance infrastructure NOW</span>
+                            <i data-lucide="x-circle" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                            <span><strong>400 vehicles</strong> need compliance infrastructure NOW</span>
                         </li>
                     </ul>
                 </div>
 
-                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border-2 border-blue-200 card-hover">
+                <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-8 rounded-2xl border-2 border-emerald-200 card-hover">
                     <div class="flex items-center space-x-3 mb-4">
-                        <i data-lucide="lightbulb" class="w-8 h-8 text-blue-700"></i>
-                        <h3 class="text-2xl font-bold text-blue-900">The Solution</h3>
+                        <i data-lucide="shield-check" class="w-8 h-8 text-emerald-700"></i>
+                        <h3 class="text-2xl font-bold text-emerald-900">The Solution</h3>
                     </div>
-                    <ul class="space-y-3 text-blue-800">
+                    <ul class="space-y-3 text-emerald-800">
                         <li class="flex items-start space-x-2">
-                            <i data-lucide="chevron-right" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
-                            <span>Infrastructure-first compliance platform</span>
+                            <i data-lucide="check-circle" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                            <span><strong>PediRide OS</strong> - Compliance dashboard for fleet operators</span>
                         </li>
                         <li class="flex items-start space-x-2">
-                            <i data-lucide="chevron-right" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
-                            <span>Integrated payment processing & transparency</span>
+                            <i data-lucide="check-circle" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                            <span><strong>PediRide Pay</strong> - QR-based transparent payment system</span>
                         </li>
                         <li class="flex items-start space-x-2">
-                            <i data-lucide="chevron-right" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
-                            <span>TfL-integrated licensing management</span>
+                            <i data-lucide="check-circle" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                            <span>TfL data integration & automated reporting</span>
                         </li>
                         <li class="flex items-start space-x-2">
-                            <i data-lucide="chevron-right" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                            <i data-lucide="check-circle" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
                             <span>Transform pedicabs into legitimate transport mode</span>
                         </li>
                     </ul>
@@ -200,6 +203,7 @@
 
             <div class="bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 text-white p-10 rounded-2xl shadow-2xl mb-12">
                 <h3 class="text-3xl font-bold mb-6">Hierarchy of Needs Strategy</h3>
+                <p class="text-lg mb-6 text-purple-100">Build foundation first, then trust, then culture - in that order.</p>
                 <div class="space-y-5">
                     <div class="flex items-center space-x-4">
                         <div class="w-32 text-sm font-semibold">Years 1-2</div>
@@ -209,35 +213,48 @@
                         <div class="w-56 text-sm font-medium">Infrastructure & Compliance</div>
                     </div>
                     <div class="flex items-center space-x-4">
+                        <div class="w-32 text-sm font-semibold">Year 2</div>
+                        <div class="flex-1 bg-white/20 rounded-full h-4">
+                            <div class="progress-bar" style="width: 100%; background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
+                        </div>
+                        <div class="w-56 text-sm font-medium">Trust & Reputation (QR Plaques)</div>
+                    </div>
+                    <div class="flex items-center space-x-4">
                         <div class="w-32 text-sm font-semibold">Years 3-5</div>
                         <div class="flex-1 bg-white/20 rounded-full h-4">
                             <div class="progress-bar" style="width: 100%; background: linear-gradient(90deg, #3b82f6, #8b5cf6);"></div>
                         </div>
-                        <div class="w-56 text-sm font-medium">Cultural Transformation</div>
+                        <div class="w-56 text-sm font-medium">Culture & Events Transformation</div>
                     </div>
                 </div>
-                <p class="mt-6 text-purple-100 leading-relaxed">
-                    First establish the foundation operators need to survive regulation, then transform 
-                    the industry through events, content, and new use cases.
-                </p>
+                <div class="mt-8 p-6 bg-white/10 rounded-lg border border-white/20">
+                    <p class="text-sm leading-relaxed">
+                        <strong>Why This Order Matters:</strong> You can't build community without trust. You can't build trust without safety. 
+                        First establish the foundation operators need to survive regulation, then transform the industry.
+                    </p>
+                </div>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-white border-2 border-emerald-300 rounded-xl p-6 text-center card-hover">
-                    <div class="text-4xl font-bold text-emerald-600 mb-1">£108K</div>
+                <div class="bg-white border-2 border-red-300 rounded-xl p-6 text-center card-hover">
+                    <div class="text-4xl font-bold text-red-600 mb-1">£45K</div>
                     <div class="text-sm text-gray-600 font-medium">Year 1 Revenue</div>
+                    <div class="text-xs text-red-600 mt-1">(-£17.5K loss)</div>
+                </div>
+                <div class="bg-white border-2 border-emerald-300 rounded-xl p-6 text-center card-hover">
+                    <div class="text-4xl font-bold text-emerald-600 mb-1">£311K</div>
+                    <div class="text-sm text-gray-600 font-medium">Year 2 Revenue</div>
+                    <div class="text-xs text-emerald-600 mt-1">(61% margin)</div>
                 </div>
                 <div class="bg-white border-2 border-blue-300 rounded-xl p-6 text-center card-hover">
-                    <div class="text-4xl font-bold text-blue-600 mb-1">£720K</div>
+                    <div class="text-4xl font-bold text-blue-600 mb-1">£725K</div>
                     <div class="text-sm text-gray-600 font-medium">Year 3 Revenue</div>
+                    <div class="text-xs text-blue-600 mt-1">(72% margin)</div>
                 </div>
                 <div class="bg-white border-2 border-purple-300 rounded-xl p-6 text-center card-hover">
-                    <div class="text-4xl font-bold text-purple-600 mb-1">£1.85M</div>
-                    <div class="text-sm text-gray-600 font-medium">Year 5 Revenue</div>
-                </div>
-                <div class="bg-white border-2 border-gray-300 rounded-xl p-6 text-center card-hover">
-                    <div class="text-4xl font-bold text-gray-700 mb-1">450</div>
-                    <div class="text-sm text-gray-600 font-medium">Target Operators</div>
+                    <div class="text-4xl font-bold text-purple-600 mb-1">11.2x</div>
+                    <div class="text-sm text-gray-600 font-medium">SEIS Return</div>
+                    <div class="text-xs text-purple-600 mt-1">(3-year hold)</div>
                 </div>
             </div>
         </div>
@@ -245,8 +262,8 @@
         <!-- Business Model View -->
         <div id="business-view" class="view-content hidden">
             <div class="text-center mb-10">
-                <h2 class="text-4xl font-bold text-gray-900 mb-3">Revenue Model</h2>
-                <p class="text-xl text-gray-600">Three complementary revenue streams scaling over time</p>
+                <h2 class="text-4xl font-bold text-gray-900 mb-3">Tri-Hybrid Revenue Model</h2>
+                <p class="text-xl text-gray-600">Three distinct, complementary revenue streams</p>
             </div>
 
             <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
@@ -256,18 +273,42 @@
                         <button onclick="selectYear(1)" class="year-btn px-5 py-2 rounded-lg font-semibold transition-all bg-blue-600 text-white shadow-lg">Year 1</button>
                         <button onclick="selectYear(2)" class="year-btn px-5 py-2 rounded-lg font-semibold transition-all bg-gray-200 text-gray-600">Year 2</button>
                         <button onclick="selectYear(3)" class="year-btn px-5 py-2 rounded-lg font-semibold transition-all bg-gray-200 text-gray-600">Year 3</button>
-                        <button onclick="selectYear(5)" class="year-btn px-5 py-2 rounded-lg font-semibold transition-all bg-gray-200 text-gray-600">Year 5</button>
                     </div>
                 </div>
 
-                <div id="revenue-streams-container" class="space-y-6">
-                    <!-- Revenue streams will be populated by JavaScript -->
+                <div id="revenue-streams-container" class="space-y-6 mb-8">
+                    <!-- Populated by JavaScript -->
                 </div>
 
-                <div class="mt-8 pt-6 border-t-2 border-gray-200">
-                    <div class="flex justify-between items-center">
+                <div class="grid md:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-gray-50 rounded-lg p-5">
+                        <div class="text-sm text-gray-600 mb-1">Active Vehicles</div>
+                        <div id="active-vehicles" class="text-3xl font-bold text-gray-900">50</div>
+                        <div id="market-penetration" class="text-sm text-gray-500 mt-1">12.5% market</div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-5">
+                        <div class="text-sm text-gray-600 mb-1">Digital Adoption</div>
+                        <div id="digital-adoption" class="text-3xl font-bold text-gray-900">40%</div>
+                        <div class="text-sm text-gray-500 mt-1">Of total rides</div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-5">
+                        <div class="text-sm text-gray-600 mb-1">Total Rides</div>
+                        <div id="total-rides" class="text-3xl font-bold text-gray-900">50,000</div>
+                        <div class="text-sm text-gray-500 mt-1">Processed annually</div>
+                    </div>
+                </div>
+
+                <div class="pt-6 border-t-2 border-gray-200">
+                    <div class="flex justify-between items-center mb-4">
                         <span class="text-xl font-bold text-gray-900">Total Revenue</span>
-                        <span id="total-revenue" class="text-4xl font-bold text-blue-600">£108K</span>
+                        <span id="total-revenue" class="text-4xl font-bold text-blue-600">£45,060</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-lg font-semibold text-gray-700">Net Profit</span>
+                        <span id="net-profit" class="text-2xl font-bold text-red-600">(£17,540)</span>
+                    </div>
+                    <div class="mt-2 text-sm text-gray-500 text-right">
+                        <span id="net-margin">Net Margin: -39%</span>
                     </div>
                 </div>
             </div>
@@ -276,61 +317,90 @@
                 <div class="bg-emerald-50 border-2 border-emerald-200 rounded-xl p-6 card-hover">
                     <div class="flex items-center space-x-3 mb-3">
                         <i data-lucide="repeat" class="w-6 h-6 text-emerald-700"></i>
-                        <h4 class="font-bold text-emerald-900 text-lg">SaaS Model</h4>
+                        <h4 class="font-bold text-emerald-900 text-lg">SaaS Subscriptions</h4>
                     </div>
-                    <p class="text-sm text-emerald-800 leading-relaxed">
-                        Recurring revenue from operator subscriptions. Core compliance features bundled at £66.67/month.
+                    <p class="text-sm text-emerald-800 leading-relaxed mb-3">
+                        Fleet operators pay <strong>£35/vehicle/month</strong> (£420/year) for PediRide OS compliance dashboard.
                     </p>
+                    <div class="text-xs text-emerald-700 bg-emerald-100 rounded p-2">
+                        Automates DBS checks, insurance monitoring, TfL data reporting
+                    </div>
                 </div>
                 <div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-6 card-hover">
                     <div class="flex items-center space-x-3 mb-3">
                         <i data-lucide="credit-card" class="w-6 h-6 text-blue-700"></i>
                         <h4 class="font-bold text-blue-900 text-lg">Transaction Fees</h4>
                     </div>
-                    <p class="text-sm text-blue-800 leading-relaxed">
-                        10% fee on payment processing. Scales with operator GMV growth as market expands.
+                    <p class="text-sm text-blue-800 leading-relaxed mb-3">
+                        <strong>8% commission</strong> on digital fares processed through PediRide Pay QR system.
                     </p>
+                    <div class="text-xs text-blue-700 bg-blue-100 rounded p-2">
+                        Scales with operator GMV as digital adoption grows
+                    </div>
                 </div>
                 <div class="bg-purple-50 border-2 border-purple-200 rounded-xl p-6 card-hover">
                     <div class="flex items-center space-x-3 mb-3">
                         <i data-lucide="megaphone" class="w-6 h-6 text-purple-700"></i>
-                        <h4 class="font-bold text-purple-900 text-lg">Advertising</h4>
+                        <h4 class="font-bold text-purple-900 text-lg">Advertising Revenue</h4>
                     </div>
-                    <p class="text-sm text-purple-800 leading-relaxed">
-                        Brand partnerships once cultural transformation begins. Activated in Year 3+.
+                    <p class="text-sm text-purple-800 leading-relaxed mb-3">
+                        <strong>£500/vehicle per 4-week campaign</strong> for brand takeovers on verified fleet inventory.
                     </p>
+                    <div class="text-xs text-purple-700 bg-purple-100 rounded p-2">
+                        Activated Year 2+ once trust infrastructure established
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl p-8">
+                <h3 class="text-2xl font-bold mb-4">Why "Tri-Hybrid" Works</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div>
+                        <div class="text-3xl font-bold mb-2">Predictable</div>
+                        <p class="text-sm text-blue-100">SaaS provides recurring, contracted revenue independent of ride volume</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold mb-2">Scalable</div>
+                        <p class="text-sm text-purple-100">Transaction fees grow automatically as market adoption increases</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold mb-2">High-Margin</div>
+                        <p class="text-sm text-pink-100">Advertising revenue is pure margin once infrastructure built</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Other views will continue similarly -->
+        <!-- Roadmap View -->
         <div id="roadmap-view" class="view-content hidden">
             <div class="text-center mb-10">
                 <h2 class="text-4xl font-bold text-gray-900 mb-3">Implementation Roadmap</h2>
-                <p class="text-xl text-gray-600">5-year journey from infrastructure to transformation</p>
+                <p class="text-xl text-gray-600">From survival infrastructure to cultural transformation</p>
             </div>
             <div id="roadmap-container" class="space-y-8">
-                <!-- Roadmap phases populated by JS -->
+                <!-- Populated by JS -->
             </div>
         </div>
 
+        <!-- Market View -->
         <div id="market-view" class="view-content hidden">
             <div class="text-center mb-10">
                 <h2 class="text-4xl font-bold text-gray-900 mb-3">Market Opportunity</h2>
-                <p class="text-xl text-gray-600">London's pedicab industry at a regulatory inflection point</p>
+                <p class="text-xl text-gray-600">London's pedicab industry at regulatory inflection point</p>
             </div>
             <div id="market-container">
-                <!-- Market data populated by JS -->
+                <!-- Populated by JS -->
             </div>
         </div>
 
+        <!-- Platform View -->
         <div id="platform-view" class="view-content hidden">
             <div class="text-center mb-10">
-                <h2 class="text-4xl font-bold text-gray-900 mb-3">Platform Features</h2>
-                <p class="text-xl text-gray-600">Comprehensive compliance and operations platform</p>
+                <h2 class="text-4xl font-bold text-gray-900 mb-3">Platform Suite</h2>
+                <p class="text-xl text-gray-600">Purpose-built for Pedicabs (London) Act 2024 compliance</p>
             </div>
             <div id="platform-container">
-                <!-- Platform features populated by JS -->
+                <!-- Populated by JS -->
             </div>
         </div>
 
@@ -340,95 +410,123 @@
     <footer class="bg-white border-t-2 border-gray-200 mt-16 no-print">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div class="text-center space-y-2">
-                <p class="text-gray-600 font-medium">PediRide Business Plan Explorer</p>
-                <p class="text-sm text-gray-500">For TfL & Operator Engagement • © 2026 PediRide</p>
-                <p class="text-xs text-gray-400">Founder: Tuoyo Sakpere • Seeking £95K SEIS Investment</p>
+                <p class="text-gray-600 font-medium">PediRide Business Plan Interactive Mapper</p>
+                <p class="text-sm text-gray-500">Seeking £95K SEIS Investment • Break-Even Month 9</p>
+                <p class="text-xs text-gray-400">Tuoyo Sakpere, Founder • pediridelondon@gmail.com • 07496181387</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Initialize Lucide icons
         lucide.createIcons();
 
-        // Data models
+        // CORRECTED DATA FROM BUSINESS PLAN
         const revenueData = {
-            1: { saas: '£48K', transactions: '£60K', advertising: '£0', total: '£108K' },
-            2: { saas: '£108K', transactions: '£202.5K', advertising: '£0', total: '£310.5K' },
-            3: { saas: '£192K', transactions: '£480K', advertising: '£48K', total: '£720K' },
-            5: { saas: '£400K', transactions: '£1.25M', advertising: '£200K', total: '£1.85M' }
+            1: { 
+                saas: '£10,500', 
+                transactions: '£34,560', 
+                advertising: '£0', 
+                total: '£45,060',
+                profit: '(£17,540)',
+                margin: '-39%',
+                vehicles: 50,
+                penetration: '12.5%',
+                adoption: '40%',
+                rides: '50,000',
+                gmv: '£600K'
+            },
+            2: { 
+                saas: '£63,000', 
+                transactions: '£198,000', 
+                advertising: '£50,000', 
+                total: '£311,000',
+                profit: '£190,825',
+                margin: '61%',
+                vehicles: 150,
+                penetration: '37.5%',
+                adoption: '55%',
+                rides: '206,250',
+                gmv: '£2.48M'
+            },
+            3: { 
+                saas: '£105,000', 
+                transactions: '£420,000', 
+                advertising: '£200,000', 
+                total: '£725,000',
+                profit: '£525,450',
+                margin: '72%',
+                vehicles: 250,
+                penetration: '62.5%',
+                adoption: '70%',
+                rides: '437,500',
+                gmv: '£5.25M'
+            }
         };
 
         const roadmapData = [
             {
                 year: 1,
                 phase: 'Foundation',
-                focus: 'Compliance Infrastructure',
+                focus: 'Compliance Infrastructure & Survival',
                 color: 'emerald',
                 milestones: [
-                    'Platform MVP launch',
-                    'First 60 operators onboarded',
-                    'TfL compliance integration',
-                    'Payment processing live',
-                    'Initial market validation'
+                    'Platform MVP launch (PediRide OS + Pay)',
+                    'First 50 vehicles onboarded across 3 fleet operators',
+                    'TfL compliance integration & data reporting',
+                    'Payment processing live (8% commission)',
+                    'Break-even at Month 9 (48 vehicles)',
+                    'Process 50,000 digital rides'
                 ],
-                revenue: '£108K',
-                operators: 60
+                revenue: '£45,060',
+                profit: '(£17,540) loss',
+                operators: 50,
+                message: '"Avoid vehicle seizure - automate TfL compliance"'
             },
             {
                 year: 2,
-                phase: 'Growth',
-                focus: 'Market Penetration',
+                phase: 'Trust & Legitimacy',
+                focus: 'QR Trust Plaques & Brand Recognition',
                 color: 'blue',
                 milestones: [
-                    'Scale to 135 operators (30% market)',
-                    'Advanced analytics dashboard',
-                    'Route optimization features',
-                    'Driver training programs',
-                    'Regulatory reporting automation'
+                    'Scale to 150 vehicles (37.5% market penetration)',
+                    'Launch QR Trust Plaque network (physical verification)',
+                    'Hotel concierge partnerships (5-star properties)',
+                    'Google Maps integration for "licensed pedicab near me"',
+                    'First advertising revenue: £50K from brand campaigns',
+                    '55% digital payment adoption achieved'
                 ],
-                revenue: '£310.5K',
-                operators: 135
+                revenue: '£311,000',
+                profit: '£190,825 (61% margin)',
+                operators: 150,
+                message: '"Don\'t Guess. Know." - transparent pricing promise'
             },
             {
                 year: 3,
-                phase: 'Expansion',
-                focus: 'Cultural Transformation',
+                phase: 'Culture & Events',
+                focus: 'Elevate to Legitimate Transport Mode',
                 color: 'purple',
                 milestones: [
-                    'Events & social content strategy',
-                    'Brand partnerships launch',
-                    'Tourist package integration',
-                    '240 operators (53% market)',
-                    'First advertising revenue'
+                    'Reach 250 vehicles (62.5% dominant market position)',
+                    'Event logistics partnerships (Wimbledon, concerts)',
+                    'High-profile brand takeover campaigns (£200K revenue)',
+                    'Social content & influencer campaigns',
+                    'Corporate ESG partnerships for green transport',
+                    '70% digital adoption - steady state achieved'
                 ],
-                revenue: '£720K',
-                operators: 240
-            },
-            {
-                year: 5,
-                phase: 'Maturity',
-                focus: 'New Use Cases',
-                color: 'slate',
-                milestones: [
-                    '500 operators (full market capture)',
-                    'Corporate partnerships',
-                    'Accessible transport initiatives',
-                    'Last-mile delivery integration',
-                    'International expansion planning'
-                ],
-                revenue: '£1.85M',
-                operators: 500
+                revenue: '£725,000',
+                profit: '£525,450 (72% margin)',
+                operators: 250,
+                message: '"Unlock the City" - lifestyle positioning'
             }
         ];
 
-        // Navigation
+        let currentYear = 1;
+
         function showView(viewName) {
             document.querySelectorAll('.view-content').forEach(view => {
                 view.classList.add('hidden');
             });
             document.getElementById(`${viewName}-view`).classList.remove('hidden');
-            document.getElementById(`${viewName}-view`).classList.add('animate-fade-in');
 
             document.querySelectorAll('.tab-button').forEach(btn => {
                 btn.classList.remove('tab-active');
@@ -439,9 +537,6 @@
 
             lucide.createIcons();
         }
-
-        // Year selection for business model
-        let currentYear = 1;
 
         function selectYear(year) {
             currentYear = year;
@@ -457,7 +552,24 @@
 
         function updateRevenueStreams(year) {
             const data = revenueData[year];
+            
             document.getElementById('total-revenue').textContent = data.total;
+            document.getElementById('net-profit').textContent = data.profit;
+            document.getElementById('net-margin').textContent = `Net Margin: ${data.margin}`;
+            document.getElementById('active-vehicles').textContent = data.vehicles;
+            document.getElementById('market-penetration').textContent = `${data.penetration} market`;
+            document.getElementById('digital-adoption').textContent = data.adoption;
+            document.getElementById('total-rides').textContent = data.rides;
+
+            // Update profit color
+            const profitEl = document.getElementById('net-profit');
+            if (data.profit.includes('(')) {
+                profitEl.classList.remove('text-emerald-600');
+                profitEl.classList.add('text-red-600');
+            } else {
+                profitEl.classList.remove('text-red-600');
+                profitEl.classList.add('text-emerald-600');
+            }
             
             const container = document.getElementById('revenue-streams-container');
             container.innerHTML = `
@@ -469,17 +581,17 @@
                         </div>
                         <div class="text-3xl font-bold text-emerald-600">${data.saas}</div>
                     </div>
-                    <p class="text-sm text-gray-600">Recurring monthly subscriptions at £66.67/operator</p>
+                    <p class="text-sm text-gray-600">£35/vehicle/month × ${data.vehicles} vehicles = £420/year per vehicle</p>
                 </div>
                 <div class="border-2 border-gray-100 rounded-xl p-6">
                     <div class="flex items-center justify-between mb-4">
                         <div class="flex items-center space-x-3">
                             <div class="w-4 h-4 rounded-full bg-blue-500"></div>
-                            <h4 class="font-bold text-gray-900 text-lg">Transaction Fees</h4>
+                            <h4 class="font-bold text-gray-900 text-lg">Transaction Fees (8%)</h4>
                         </div>
                         <div class="text-3xl font-bold text-blue-600">${data.transactions}</div>
                     </div>
-                    <p class="text-sm text-gray-600">10% commission on payment processing volume</p>
+                    <p class="text-sm text-gray-600">8% commission on ${data.gmv} GMV (${data.adoption} digital adoption)</p>
                 </div>
                 <div class="border-2 border-gray-100 rounded-xl p-6">
                     <div class="flex items-center justify-between mb-4">
@@ -489,12 +601,11 @@
                         </div>
                         <div class="text-3xl font-bold text-purple-600">${data.advertising}</div>
                     </div>
-                    <p class="text-sm text-gray-600">${year < 3 ? 'Not yet active - launching Year 3' : 'Brand partnerships and sponsored content'}</p>
+                    <p class="text-sm text-gray-600">${year < 2 ? 'Not yet active - launching Year 2+' : '£500/vehicle per 4-week brand campaign'}</p>
                 </div>
             `;
         }
 
-        // Populate roadmap
         function populateRoadmap() {
             const container = document.getElementById('roadmap-container');
             container.innerHTML = roadmapData.map(phase => `
@@ -503,11 +614,13 @@
                         <div class="flex items-center justify-between mb-2">
                             <h3 class="text-3xl font-bold">Year ${phase.year}: ${phase.phase}</h3>
                             <div class="text-right">
-                                <div class="text-sm opacity-90">Projected Revenue</div>
-                                <div class="text-3xl font-bold">${phase.revenue}</div>
+                                <div class="text-sm opacity-90">Revenue / Profit</div>
+                                <div class="text-2xl font-bold">${phase.revenue}</div>
+                                <div class="text-sm opacity-90">${phase.profit}</div>
                             </div>
                         </div>
-                        <p class="text-xl opacity-95">${phase.focus}</p>
+                        <p class="text-xl opacity-95 mb-2">${phase.focus}</p>
+                        <p class="text-sm opacity-90 italic">${phase.message}</p>
                     </div>
                     <div class="p-8">
                         <div class="grid md:grid-cols-2 gap-8">
@@ -524,9 +637,9 @@
                             </div>
                             <div class="space-y-4">
                                 <div class="bg-gray-50 rounded-lg p-6">
-                                    <div class="text-sm text-gray-600 mb-2">Operator Count</div>
+                                    <div class="text-sm text-gray-600 mb-2">Active Vehicles</div>
                                     <div class="text-4xl font-bold text-gray-900">${phase.operators}</div>
-                                    <div class="text-sm text-gray-500 mt-2">${Math.round((phase.operators / 450) * 100)}% market penetration</div>
+                                    <div class="text-sm text-gray-500 mt-2">${((phase.operators / 400) * 100).toFixed(1)}% market penetration</div>
                                 </div>
                             </div>
                         </div>
@@ -536,26 +649,25 @@
             lucide.createIcons();
         }
 
-        // Populate market view
         function populateMarket() {
             const container = document.getElementById('market-container');
             container.innerHTML = `
                 <div class="grid md:grid-cols-4 gap-6 mb-12">
                     <div class="bg-gradient-to-br from-emerald-500 to-emerald-600 text-white rounded-2xl p-8 text-center shadow-xl">
-                        <div class="text-6xl font-bold mb-2">450</div>
-                        <div class="text-emerald-100">Total Operators</div>
+                        <div class="text-6xl font-bold mb-2">400</div>
+                        <div class="text-emerald-100">Total Vehicles</div>
                     </div>
                     <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-2xl p-8 text-center shadow-xl">
-                        <div class="text-5xl font-bold mb-2">£25K</div>
-                        <div class="text-blue-100">Avg Revenue/Operator</div>
+                        <div class="text-5xl font-bold mb-2">1M</div>
+                        <div class="text-blue-100">Annual Rides</div>
                     </div>
                     <div class="bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-2xl p-8 text-center shadow-xl">
-                        <div class="text-5xl font-bold mb-2">£11.25M</div>
-                        <div class="text-purple-100">Total Market Value</div>
+                        <div class="text-5xl font-bold mb-2">£12M</div>
+                        <div class="text-purple-100">Market Value</div>
                     </div>
                     <div class="bg-gradient-to-br from-slate-700 to-slate-800 text-white rounded-2xl p-8 text-center shadow-xl">
-                        <div class="text-5xl font-bold mb-2">15%</div>
-                        <div class="text-slate-100">Annual Growth</div>
+                        <div class="text-5xl font-bold mb-2">100%</div>
+                        <div class="text-slate-100">Cash Economy</div>
                     </div>
                 </div>
 
@@ -566,10 +678,11 @@
                     </h3>
                     <div class="space-y-4">
                         ${[
-                            { issue: 'Overcharging complaints', severity: 'High', source: 'TfL consultation 2024' },
-                            { issue: 'Safety concerns', severity: 'High', source: 'Public feedback' },
-                            { issue: 'Lack of licensing', severity: 'Critical', source: 'Regulatory gap' },
-                            { issue: 'Payment disputes', severity: 'Medium', source: 'Operator feedback' }
+                            { issue: '85% of passengers report overcharging', severity: 'Critical', source: 'TfL Consultation Report March 2025' },
+                            { issue: '75% feel unsafe using pedicabs', severity: 'Critical', source: 'Public safety concerns' },
+                            { issue: '92-97% public support for licensing controls', severity: 'Regulatory Mandate', source: 'Overwhelming consensus' },
+                            { issue: '60% of users are tourists demanding card payment', severity: 'High', source: 'Market composition data' },
+                            { issue: 'Zero organized opposition (only 18 operators = 0.3%)', severity: 'Market Acceptance', source: 'Regulation inevitable' }
                         ].map(point => `
                             <div class="flex items-center justify-between p-5 bg-red-50 rounded-lg">
                                 <div>
@@ -578,7 +691,8 @@
                                 </div>
                                 <div class="px-4 py-2 rounded-full text-sm font-bold ${
                                     point.severity === 'Critical' ? 'bg-red-200 text-red-900' :
-                                    point.severity === 'High' ? 'bg-orange-200 text-orange-900' :
+                                    point.severity === 'Regulatory Mandate' ? 'bg-orange-200 text-orange-900' :
+                                    point.severity === 'Market Acceptance' ? 'bg-green-200 text-green-900' :
                                     'bg-yellow-200 text-yellow-900'
                                 }">
                                     ${point.severity}
@@ -588,22 +702,22 @@
                     </div>
                 </div>
 
-                <div class="bg-gradient-to-br from-blue-900 to-purple-900 text-white rounded-2xl p-10 shadow-2xl">
+                <div class="bg-gradient-to-br from-blue-900 to-purple-900 text-white rounded-2xl p-10 shadow-2xl mb-8">
                     <h3 class="text-3xl font-bold mb-8">Regulatory Timeline</h3>
                     <div class="space-y-6">
                         <div class="flex items-center space-x-4">
-                            <div class="w-32 text-sm font-semibold">Q1 2026</div>
+                            <div class="w-32 text-sm font-semibold">Q1-Q2 2026</div>
                             <div class="flex-1 bg-white/20 rounded-full h-3">
                                 <div class="h-3 bg-emerald-400 rounded-full" style="width: 30%;"></div>
                             </div>
-                            <div class="w-56 text-sm">Platform Development</div>
+                            <div class="w-56 text-sm">MVP Build & Beta Launch</div>
                         </div>
                         <div class="flex items-center space-x-4">
-                            <div class="w-32 text-sm font-semibold">Q2 2026</div>
+                            <div class="w-32 text-sm font-semibold">Q3 2026</div>
                             <div class="flex-1 bg-white/20 rounded-full h-3">
                                 <div class="h-3 bg-blue-400 rounded-full" style="width: 60%;"></div>
                             </div>
-                            <div class="w-56 text-sm">MVP Launch & Onboarding</div>
+                            <div class="w-56 text-sm">Platform Launch & Onboarding</div>
                         </div>
                         <div class="flex items-center space-x-4">
                             <div class="w-32 text-sm font-semibold">Q3-Q4 2026</div>
@@ -615,46 +729,78 @@
                     </div>
                     <div class="mt-8 p-6 bg-white/10 rounded-lg border border-white/20">
                         <p class="leading-relaxed">
-                            <strong>Critical Window:</strong> Operators must be compliant before enforcement. 
-                            PediRide provides the only comprehensive infrastructure solution in market.
+                            <strong>Critical Window:</strong> Operators must be compliant before enforcement. Break-even at Month 9 (48 vehicles = just 3 operators). 
+                            PediRide is the only purpose-built solution for Pedicabs (London) Act 2024 compliance.
                         </p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold mb-6">Investment Returns</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-white/20 rounded-lg p-6">
+                            <div class="text-4xl font-bold mb-2">6.1x</div>
+                            <div class="text-sm text-green-100">Base Case Return</div>
+                            <div class="text-xs text-green-200 mt-2">3-year hold, £95K investment</div>
+                        </div>
+                        <div class="bg-white/20 rounded-lg p-6">
+                            <div class="text-4xl font-bold mb-2">11.2x</div>
+                            <div class="text-sm text-green-100">SEIS-Enhanced Return</div>
+                            <div class="text-xs text-green-200 mt-2">50% tax relief on investment</div>
+                        </div>
+                        <div class="bg-white/20 rounded-lg p-6">
+                            <div class="text-4xl font-bold mb-2">83%</div>
+                            <div class="text-sm text-green-100">Internal Rate of Return</div>
+                            <div class="text-xs text-green-200 mt-2">Annualized over 3 years</div>
+                        </div>
                     </div>
                 </div>
             `;
             lucide.createIcons();
         }
 
-        // Populate platform view
         function populatePlatform() {
             const features = [
                 {
-                    category: 'Compliance Core',
+                    name: 'PediRide OS',
+                    subtitle: 'B2B SaaS - Compliance Dashboard',
+                    price: '£35/vehicle/month',
                     color: 'emerald',
                     items: [
-                        { name: 'Licensing Management', desc: 'TfL integration for real-time compliance tracking' },
-                        { name: 'Insurance Verification', desc: 'Automated policy validation and renewal alerts' },
-                        { name: 'Vehicle Registration', desc: 'Digital registration with photo documentation' },
-                        { name: 'Regulatory Reporting', desc: 'Automated submissions to TfL and authorities' }
+                        { name: 'DBS Check Automation', desc: '21-day expiry alerts, automatic renewal reminders' },
+                        { name: 'Insurance Monitoring', desc: 'Real-time policy validation, renewal tracking' },
+                        { name: 'TfL Data Reporting', desc: 'One-click export in exact regulatory format required' },
+                        { name: 'Licence Management', desc: 'Traffic light compliance scoring, violation tracking' },
+                        { name: 'Westminster Geofencing', desc: 'Automatic quiet zone enforcement, restricted area alerts' },
+                        { name: 'Driver Verification', desc: 'Instant identity confirmation, background check status' }
                     ]
                 },
                 {
-                    category: 'Payment Processing',
+                    name: 'PediRide Pay',
+                    subtitle: 'B2C - QR-Based Payment System',
+                    price: '8% commission on transactions',
                     color: 'blue',
                     items: [
-                        { name: 'Secure Transactions', desc: 'PCI-compliant payment gateway integration' },
-                        { name: 'Dynamic Pricing', desc: 'Transparent fare calculation and display' },
-                        { name: 'Digital Receipts', desc: 'Instant passenger receipts via email/SMS' },
-                        { name: 'Settlement Management', desc: 'Automated operator payouts' }
+                        { name: 'QR Trust Plaques', desc: 'Physical verification - scan to view driver licence, DBS, ratings' },
+                        { name: 'Digital Soft-Metre', desc: 'Live fare calculation shown to passenger during journey' },
+                        { name: 'Contactless Payment', desc: 'Apple Pay, Google Pay, any debit/credit card accepted' },
+                        { name: 'Automated Receipts', desc: 'Email/SMS receipts with route map and TfL complaint hotline' },
+                        { name: 'Rating System', desc: '5-star driver ratings creating accountability and trust' },
+                        { name: 'Dispute Protection', desc: 'Digital evidence for payment disputes vs zero recourse with cash' }
                     ]
                 },
                 {
-                    category: 'Operations',
+                    name: 'PediRide Ad Network',
+                    subtitle: 'B2B Media Sales - Brand Campaigns',
+                    price: '£500/vehicle per 4-week campaign',
                     color: 'purple',
                     items: [
-                        { name: 'Route Optimization', desc: 'AI-powered route planning for efficiency' },
-                        { name: 'Analytics Dashboard', desc: 'Real-time insights on earnings and performance' },
-                        { name: 'Passenger Feedback', desc: 'Review system for quality improvement' },
-                        { name: 'Fleet Management', desc: 'Multi-vehicle management for operators' }
+                        { name: 'Brand Takeover Campaigns', desc: 'Coordinate 50-250 vehicles for high-impact visibility' },
+                        { name: 'Hyperlocal Targeting', desc: 'Geographic saturation (e.g., saturate Covent Garden for theatre brands)' },
+                        { name: 'GPS-Verified Impressions', desc: 'Proof of delivery with location data and exposure metrics' },
+                        { name: 'Quality Control', desc: 'Only verified, maintained, compliant vehicles accepted' },
+                        { name: 'Event Partnerships', desc: 'Wimbledon, concerts, festivals - sponsored fleet activations' },
+                        { name: 'ESG Alignment', desc: 'Carbon-audited transport for corporate green procurement' }
                     ]
                 }
             ];
@@ -662,16 +808,23 @@
             const container = document.getElementById('platform-container');
             container.innerHTML = `
                 <div class="space-y-8 mb-12">
-                    ${features.map(cat => `
+                    ${features.map(product => `
                         <div class="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden shadow-lg">
-                            <div class="p-6 bg-gradient-to-r from-${cat.color}-500 to-${cat.color}-600 text-white">
-                                <h3 class="text-3xl font-bold">${cat.category}</h3>
+                            <div class="p-6 bg-gradient-to-r from-${product.color}-500 to-${product.color}-600 text-white">
+                                <h3 class="text-3xl font-bold mb-1">${product.name}</h3>
+                                <p class="text-lg opacity-90 mb-2">${product.subtitle}</p>
+                                <div class="inline-block bg-white/20 px-4 py-1 rounded-full text-sm font-semibold">
+                                    ${product.price}
+                                </div>
                             </div>
                             <div class="p-8">
                                 <div class="grid md:grid-cols-2 gap-6">
-                                    ${cat.items.map(item => `
-                                        <div class="p-6 bg-gray-50 rounded-lg card-hover">
-                                            <h4 class="font-bold text-gray-900 mb-3 text-lg">${item.name}</h4>
+                                    ${product.items.map(item => `
+                                        <div class="p-5 bg-gray-50 rounded-lg card-hover">
+                                            <h4 class="font-bold text-gray-900 mb-2 text-lg flex items-center">
+                                                <i data-lucide="check-circle-2" class="w-5 h-5 mr-2 text-${product.color}-600"></i>
+                                                ${item.name}
+                                            </h4>
                                             <p class="text-sm text-gray-600 leading-relaxed">${item.desc}</p>
                                         </div>
                                     `).join('')}
@@ -685,23 +838,34 @@
                     <h3 class="text-3xl font-bold mb-8">User Journeys</h3>
                     <div class="space-y-5">
                         ${[
-                            { role: 'Operator', journey: 'Sign up → Complete compliance → Accept payments → View analytics → Scale fleet' },
-                            { role: 'Passenger', journey: 'Book ride → Transparent pricing → Secure payment → Digital receipt → Leave review' },
-                            { role: 'TfL/Regulator', journey: 'Access dashboards → Verify compliance → Export reports → Monitor industry health' }
+                            { 
+                                role: 'Fleet Operator (B2B)', 
+                                icon: 'briefcase',
+                                journey: 'Sign up → Upload compliance docs → Onboard drivers → Auto-generate TfL reports → Avoid seizure → Scale fleet'
+                            },
+                            { 
+                                role: 'Passenger (B2C)', 
+                                icon: 'user',
+                                journey: 'Scan QR plaque → Verify driver → See live fare → Pay contactless → Receive receipt → Rate driver'
+                            },
+                            { 
+                                role: 'TfL / Regulator', 
+                                icon: 'shield',
+                                journey: 'Access compliance dashboard → Verify operator status → Export violation reports → Monitor industry health → Enforce standards'
+                            }
                         ].map(user => `
                             <div class="p-6 bg-white/10 rounded-lg border border-white/20">
-                                <div class="font-bold text-xl mb-3">${user.role}</div>
-                                <div class="text-gray-200">${user.journey}</div>
+                                <div class="flex items-center space-x-3 mb-3">
+                                    <i data-lucide="${user.icon}" class="w-6 h-6"></i>
+                                    <div class="font-bold text-xl">${user.role}</div>
+                                </div>
+                                <div class="text-gray-200 text-sm">${user.journey}</div>
                             </div>
                         `).join('')}
                     </div>
                 </div>
             `;
-        }
-
-        // Export functionality
-        function exportData() {
-            window.print();
+            lucide.createIcons();
         }
 
         function toggleMobileMenu() {
@@ -709,7 +873,7 @@
             nav.classList.toggle('hidden');
         }
 
-        // Initialize on load
+        // Initialize
         document.addEventListener('DOMContentLoaded', () => {
             updateRevenueStreams(1);
             populateRoadmap();
